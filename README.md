@@ -13,7 +13,7 @@ The main goal is to preserve file and folder names after extraction on Windows. 
 Run this from a terminal:
 
 ```bash
-cd windows-zip-maker
+cd mac-to-windows-zip-cleaner
 python3 app.py
 ```
 

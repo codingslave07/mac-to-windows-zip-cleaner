@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import app
 
 
-class WindowsZipMakerTests(unittest.TestCase):
+class MacToWindowsZipCleanerTests(unittest.TestCase):
     def test_safe_arcname_sanitizes_windows_incompatible_names(self):
         self.assertEqual(app.safe_arcname("a:b.txt"), "a_b.txt")
         self.assertEqual(app.safe_arcname("bad|name?.txt"), "bad_name_.txt")

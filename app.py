@@ -22,7 +22,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
 
 
-APP_TITLE = "Windows ZIP Maker"
+APP_TITLE = "Mac to Windows ZIP Cleaner"
 DEFAULT_PORT = 8765
 WINDOWS_INVALID_CHARS_RE = re.compile(r'[<>:"|?*\x00-\x1f]')
 WINDOWS_RESERVED_NAMES = {
@@ -436,8 +436,8 @@ def html_page() -> str:
 </head>
 <body>
 <main>
-  <h1>Windows ZIP Maker</h1>
-  <p class="lead">Create Windows-friendly ZIP files from macOS by normalizing archive names to NFC Unicode and excluding common macOS metadata.</p>
+  <h1>Mac to Windows ZIP Cleaner</h1>
+  <p class="lead">Create Windows-friendly ZIP archives by normalizing internal file names and removing common macOS metadata.</p>
 
   <div class="grid">
     <section class="card">
@@ -571,7 +571,7 @@ zipButton.addEventListener("click", createZip);
 
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = "WindowsZipMaker/1.0"
+    server_version = "MacToWindowsZipCleaner/1.0"
 
     def log_message(self, fmt: str, *args) -> None:
         print("%s - %s" % (self.address_string(), fmt % args))
@@ -642,7 +642,7 @@ def choose_port(preferred: int) -> int:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Create Windows-friendly ZIP files from a local web UI.")
+    parser = argparse.ArgumentParser(description="Create Windows-friendly ZIP archives from a local web UI.")
     parser.add_argument("--port", type=int, default=DEFAULT_PORT)
     args = parser.parse_args()
 

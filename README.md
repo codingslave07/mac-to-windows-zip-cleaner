@@ -1,12 +1,12 @@
-# Windows ZIP Maker
+# Mac to Windows ZIP Cleaner
 
-A local web tool for creating Windows-friendly ZIP files on macOS. It normalizes internal archive names to NFC Unicode, removes Windows-incompatible filename characters, and skips common macOS metadata.
+A local macOS web tool that creates Windows-friendly ZIP archives by cleaning macOS metadata and normalizing internal file names.
 
 The main goal is to preserve file and folder names after extraction on Windows. Depending on the unzip tool, the ZIP archive file name itself may still display differently before extraction.
 
 ## Screenshot
 
-![Windows ZIP Maker preview](screenshots/preview.png)
+![Mac to Windows ZIP Cleaner preview](screenshots/preview.png)
 
 ## Run
 

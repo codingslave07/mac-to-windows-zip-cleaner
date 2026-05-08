@@ -6,7 +6,7 @@ The main goal is to preserve file and folder names after extraction on Windows. 
 
 ## Screenshot
 
-![Mac to Windows ZIP Cleaner preview](screenshots/preview.png)
+![Mac to Windows ZIP Cleaner preview](screenshots/mac-to-windows-zip-cleaner.png)
 
 ## Run
 
